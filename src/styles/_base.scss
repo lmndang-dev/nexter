@@ -35,3 +35,30 @@ body {
   font-weight: 300;
   line-height: 1.6;
 }
+
+//Grid page layout
+.container {
+  display: grid;
+
+  //Header and realtor row is 80% of viewport height
+  //Features row will extend as it wrapped
+  //Story Pictures and story content content row will have 40$ if viewport width
+  //Homes + Gallery + Footer row will extend as it wrapped
+  grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+
+  //
+  //standard grid of 1140px / 8 grids = 142.5px (14rem)
+  //add 2 fragments (fr) to center the main content (1140px)
+  //2 fragments will be shrink first then the main content
+  grid-template-columns:
+    [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+
+  //Development purpose
+  & > * {
+    padding: 4rem;
+    font-size: 3rem;
+  }
+}

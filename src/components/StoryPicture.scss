@@ -1,0 +1,8 @@
+@use "../styles/base" as *;
+
+.story {
+  &__pictures {
+    background-color: $color-primary;
+    grid-column: full-start / col-end 4;
+  }
+}

@@ -4,5 +4,13 @@
   &__pictures {
     background-color: $color-primary;
     grid-column: full-start / col-end 4;
+
+    display: grid;
+  }
+
+  &__img--1 {
+  }
+
+  &__img--2 {
   }
 }

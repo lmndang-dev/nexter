@@ -1,3 +1,30 @@
+@use "../styles/base" as *;
+
 .home {
   /* Styles for the home card */
+  background-color: $color-grey-light-1;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__like {
+  }
+
+  &__name {
+  }
+
+  &__location,
+  &__rooms,
+  &__area,
+  &__price {
+    svg {
+      fill: $color-primary;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    p {
+    }
+  }
 }

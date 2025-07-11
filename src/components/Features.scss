@@ -6,6 +6,8 @@
   margin: 15rem 0;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  //grid-template-columns: repeat(3, 1fr);
+  //minimum each item is have 250px, if not, fill the grid
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 6rem;
 }

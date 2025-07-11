@@ -1,4 +1,28 @@
 /* Styles for FeatureItem component */
+@use "../styles/base" as *;
+
 .feature {
-  /* Add your styles here */
+  display: grid;
+
+  //same with the icon
+  grid-template-columns: min-content 1fr;
+
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
+  align-items: start;
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+
+    grid-row: 1 / span 2;
+
+    transform: translateY(-1rem);
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
 }

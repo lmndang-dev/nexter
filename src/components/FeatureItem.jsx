@@ -7,7 +7,7 @@ const FeatureItem = ({ iconID, title, text }) => {
       <svg className="feature__icon">
         <use href={`${sprite}#icon-${iconID}`}></use>
       </svg>
-      <h4 className="heading-4">{title}</h4>
+      <h4 className="heading-4 heading--4--dark">{title}</h4>
       <p className="feature__text">{text}</p>
     </div>
   );

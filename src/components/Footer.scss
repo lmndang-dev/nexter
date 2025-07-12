@@ -1,6 +1,6 @@
 @use "../styles/base" as *;
 
 .footer {
-  background-color: $color-secondary;
+  background-color: aqua;
   grid-column: full-start / full-end;
 }

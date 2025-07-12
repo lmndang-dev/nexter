@@ -48,7 +48,7 @@ const HomeCard = ({ imgName, name, location, numberOfRooms, area, price }) => {
         <p>${formatNumber(price)}</p>
       </div>
 
-      <button className="cta">Contact realtor</button>
+      <button className="btn home__btn">Contact realtor</button>
     </div>
   );
 };
